@@ -22,5 +22,6 @@ resource "aws_db_instance" "rdsdb" {
 resource "random_string" "password" {
   length = 16
   special = false
+  upper = false
 }
 
