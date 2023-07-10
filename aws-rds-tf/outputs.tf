@@ -18,3 +18,6 @@ output "rds_password" {
   value       = random_string.password.result
   sensitive   = true
 }
+output "rds_name" {
+  value = aws_db_instance.rdsdb.db_name
+}
